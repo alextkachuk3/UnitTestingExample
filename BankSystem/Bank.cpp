@@ -14,22 +14,22 @@ int Bank::AddUser(const std::string& username)
 	return id;
 }
 
-void Bank::IncreaseUserBalance(const int id, const int value)
+void Bank::IncreaseUserBalance(const int id, const double value)
 {
 	users.at(id).IncreaseBalance(value);
 }
 
-void Bank::DecreaseUserBalance(const int id, const int value)
+void Bank::DecreaseUserBalance(const int id, const double value)
 {
 	users.at(id).DecreaseBalance(value);
 }
 
-int Bank::GetUserBalance(const int id) const
+double Bank::GetUserBalance(const int id) const
 {
 	return users.at(id).GetBalance();
 }
 
-int Bank::GetUsersCount() const
+size_t Bank::GetUsersCount() const
 {
 	return users.size();
 }

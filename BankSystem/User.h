@@ -6,9 +6,10 @@ class User
 {
 public:
 	User(const std::string& _name);
-	void IncreaseBalance(const int value);
-	void DecreaseBalance(const int value);
-	int GetBalance() const;
+	void IncreaseBalance(const double value);
+	void DecreaseBalance(const double value);
+	double GetBalance() const;
+	const std::string& GetName() const;
 
 private:
 	double balance;

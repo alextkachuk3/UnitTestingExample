@@ -1,7 +1,7 @@
 #include <iostream>
-#include "../Bank/main.cpp"
+#include "Bank.h"
 
 int main()
 {
-	Bank bank();
+	Bank bank;
 }

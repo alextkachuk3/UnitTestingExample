@@ -9,10 +9,10 @@ class Bank
 public:
 	Bank() = default;
 	int AddUser(const std::string& username);
-	void IncreaseUserBalance(const int id, const int value);
-	void DecreaseUserBalance(const int id, const int value);
-	int GetUserBalance(const int id) const;
-	int GetUsersCount() const;
+	void IncreaseUserBalance(const int id, const double value);
+	void DecreaseUserBalance(const int id, const double value);
+	double GetUserBalance(const int id) const;
+	size_t GetUsersCount() const;
 
 private:
 	std::unordered_map<int, User> users;
